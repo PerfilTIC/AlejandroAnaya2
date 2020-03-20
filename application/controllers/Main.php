@@ -86,7 +86,7 @@ class Main extends CI_Controller
             if (!$this->upload->do_upload('image')) {
                 //no sube el archivo
                 echo "entraaaaaaaa";
-                echo $_SERVER['DOCUMENT_ROOT']."/uploads";
+                echo base_url()."/uploads";
                 print_r($this->upload->display_errors());
 
             } else {
