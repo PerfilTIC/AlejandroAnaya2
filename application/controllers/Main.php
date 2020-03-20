@@ -95,6 +95,9 @@ class Main extends CI_Controller
 
                 echo json_encode($this->MainModel->addCategoria($nombre, $urlFile, $idCatPadre));
             }
+        }else{
+            echo "error: ";
+            print_r($_FILES);
         }
         die;
         /*
