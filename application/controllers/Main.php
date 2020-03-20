@@ -115,6 +115,7 @@ class Main extends CI_Controller{
         $id_user = $this->input->post('id_user');
         $categoria = $this->input->post('categoria');
         $this->MainModel->addCategoria($id_user,$categoria);
+        die;
     }
     public function listarCategorias(){
         $id_user = $this->input->post('id_user');
