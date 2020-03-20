@@ -18,7 +18,7 @@ class Main extends CI_Controller
 
         $this->load->helper('url');
         $this->load->library('session');
-
+        
         $this->load->model('MainModel');
     }
     public function index()
@@ -75,7 +75,7 @@ class Main extends CI_Controller
 
         if (isset($_FILES["image"]["name"])) {
 
-            $config['upload_path'] = base_url() . "uploads/";
+            $config['upload_path'] = $_SERVER['DOCUMENT_ROOT']."/uploads/";
             $config['allowed_types'] = 'jpg|png|jpeg';
             $config['encrypt_name'] = TRUE;
 
@@ -85,7 +85,7 @@ class Main extends CI_Controller
 
             if (!$this->upload->do_upload('image')) {
                 //no sube el archivo
-                echo "entraaaaaaaaa";
+                echo "entraaaaaaaa";
                 print_r($this->upload->display_errors());
 
             } else {
