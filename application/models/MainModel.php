@@ -4,7 +4,7 @@ class MainModel extends CI_Model{
         $this->load->database();
     }
     public function login($user,$pass){
-        $data = $this->db->get_where('usuarios',array('nombre'=> $user, 'contraseña'=>$pass),1);
+        $data = $this->db->get_where('usuarios',array('nombre'=> $user, 'password'=>$pass),1);
         if($data->result_array()){
 
             return $data->row();
