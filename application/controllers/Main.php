@@ -71,6 +71,8 @@ class Main extends CI_Controller
     }
     public function addCategoria()
     {
+        echo "entra";
+        
         if (isset($_FILES["image"]["name"])) {
 
             $config['upload_path'] = './uploads/';
