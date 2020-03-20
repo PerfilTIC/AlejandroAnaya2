@@ -71,8 +71,8 @@ class Main extends CI_Controller
     }
     public function addCategoria()
     {
-        echo "entra";
         
+
         if (isset($_FILES["image"]["name"])) {
 
             $config['upload_path'] = './uploads/';
@@ -84,7 +84,7 @@ class Main extends CI_Controller
 
             if (!$this->upload->do_upload('image')) {
                 //no sube el archivo
-                //print_r($this->upload->display_errors());
+                print_r($this->upload->display_errors());
 
             } else {
                 //si lo sube
