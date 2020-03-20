@@ -85,7 +85,7 @@ class Main extends CI_Controller
 
             if (!$this->upload->do_upload('image')) {
                 //no sube el archivo
-                echo "entraaaaaaaa";
+                echo "entraaaaaaaa 1";
                 print_r($this->upload->display_errors());
 
             } else {
