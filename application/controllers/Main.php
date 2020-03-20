@@ -75,7 +75,7 @@ class Main extends CI_Controller
 
         if (isset($_FILES["image"]["name"])) {
 
-            $config['upload_path'] = $_SERVER['DOCUMENT_ROOT']."/uploads/";
+            $config['upload_path'] = $_SERVER['DOCUMENT_ROOT']."/uploads";
             $config['allowed_types'] = 'jpg|png|jpeg';
             $config['encrypt_name'] = TRUE;
 
@@ -85,7 +85,8 @@ class Main extends CI_Controller
 
             if (!$this->upload->do_upload('image')) {
                 //no sube el archivo
-                echo "entraaaaaaaa 1";
+                echo "entraaaaaaaa";
+                echo $_SERVER['DOCUMENT_ROOT']."/uploads";
                 print_r($this->upload->display_errors());
 
             } else {
