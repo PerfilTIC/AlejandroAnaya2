@@ -119,10 +119,10 @@ $db['local'] = array(
 );
 $db['produccion'] = array(
 	'dsn'	=> '',
-	'hostname' => 'ec2-52-73-247-67.compute-1.amazonaws.com',
-	'username' => 'xzfnplduqptncl',
-	'password' => '0913f4ddf75eee8c6d6e7ee0052679dacef3e6ae768c46a6c7a163b91cf66d64',
-	'database' => 'd8esb4g1nben5g',
+	'hostname' => 'ec2-3-234-109-123.compute-1.amazonaws.com',
+	'username' => 'ssbihksptqscca',
+	'password' => '0cdf6e0d4b41428abf4a67b6a381e9393bcabf17c3ff73d2d3692703efcd5f88',
+	'database' => 'd53rufvis2q9gs',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
