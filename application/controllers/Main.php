@@ -75,7 +75,7 @@ class Main extends CI_Controller
 
         if (isset($_FILES["image"]["name"])) {
 
-            $config['upload_path'] = $_SERVER['DOCUMENT_ROOT']."/uploads";
+            $config['upload_path'] = base_url()."uploads";
             $config['allowed_types'] = 'jpg|png|jpeg';
             $config['encrypt_name'] = TRUE;
 
